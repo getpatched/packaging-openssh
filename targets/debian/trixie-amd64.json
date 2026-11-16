@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "debian-trixie-amd64",
+  "base": {
+    "distribution": "Debian",
+    "release": "13",
+    "codename": "trixie",
+    "sourcePocket": "release",
+    "architecture": "amd64"
+  },
+  "source": {
+    "format": "3.0 (quilt)",
+    "version": "1:10.0p1-7+deb13u4",
+    "publication": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/",
+    "descriptor": {
+      "name": "openssh_10.0p1-7+deb13u4.dsc",
+      "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/o/openssh/openssh_10.0p1-7+deb13u4.dsc",
+      "sha256": "73fed3fd77d60925ed342bcb0afd3c037e4ea0d39333107bf617aa90f859910f",
+      "bytes": 3763
+    },
+    "files": [
+      {
+        "name": "openssh_10.0p1.orig.tar.gz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz",
+        "sha256": "021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c",
+        "bytes": 1972675,
+        "role": "upstream-source"
+      },
+      {
+        "name": "openssh_10.0p1.orig.tar.gz.asc",
+        "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc",
+        "sha256": "f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04",
+        "bytes": 833,
+        "role": "upstream-signature"
+      },
+      {
+        "name": "openssh_10.0p1-7+deb13u4.debian.tar.xz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/o/openssh/openssh_10.0p1-7+deb13u4.debian.tar.xz",
+        "sha256": "102e1065030c6002acabd7f896eeba1462bf54b4d7393bac34b0308312868ec6",
+        "bytes": 215600,
+        "role": "debian-packaging"
+      }
+    ],
+    "signatureVerification": {
+      "verified": false,
+      "note": "Source pins were selected from the pinned Debian snapshot Sources index. The uploader signature was not separately authenticated."
+    }
+  },
+  "supportedSourceVersions": [
+    "1:10.0p1-7+deb13u4"
+  ],
+  "packageVersion": "1:10.0p1-7+deb13u4+getpatched1",
+  "releaseSerial": 1,
+  "changelog": {
+    "distribution": "trixie",
+    "urgency": "low",
+    "maintainer": "GetPatched Maintainers <packages@getpatched.dev>",
+    "date": "Mon, 16 Nov 2026 08:00:00 +0000"
+  },
+  "binaryPackages": [
+    "openssh-client"
+  ],
+  "patches": [],
+  "status": "unreleased-development-candidate"
+}
