@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "project": {
+    "name": "GetPatched",
+    "repository": "getpatched/packaging-openssh",
+    "description": "Debian Trixie rebuild recipe for OpenSSH client."
+  },
+  "package": {
+    "source": "openssh",
+    "description": "OpenSSH client",
+    "upstreamProject": "OpenSSH client",
+    "upstreamRepository": "https://www.openssh.com/",
+    "copyrightFile": "LICENSES/debian-copyright"
+  },
+  "targets": [
+    {
+      "id": "debian-trixie-amd64",
+      "file": "targets/debian/trixie-amd64.json"
+    }
+  ],
+  "patchMetadata": "patches/metadata.json",
+  "regressionTests": {
+    "fixturesDirectory": "ci/debian-trixie-amd64",
+    "runner": "ci/debian-trixie-amd64/smoke.sh"
+  },
+  "licensing": {
+    "publicContributionsSpdx": "MIT",
+    "publicContributionsLicenseFile": "LICENSE",
+    "fileLicenses": [],
+    "earlyBinaryLicenseId": null,
+    "earlyBinaryTermsFile": null,
+    "upstreamCopyrightFile": "LICENSES/debian-copyright",
+    "upstreamLicenses": "preserve"
+  }
+}
