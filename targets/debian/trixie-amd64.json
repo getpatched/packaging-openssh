@@ -1,5 +1,6 @@
 {
   "schemaVersion": 2,
+  "status": "ci-baseline",
   "id": "debian-trixie-amd64",
   "base": {
     "distribution": "Debian",
@@ -60,6 +61,5 @@
   "binaryPackages": [
     "openssh-client"
   ],
-  "patches": [],
-  "status": "unreleased-development-candidate"
+  "patches": []
 }
